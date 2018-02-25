@@ -1,0 +1,225 @@
+body{
+	font-size: 12px;
+	background-color: #f5f5f5;
+}
+#now{
+	width: 100%;
+	height: 13.8rem;
+	background:url('../img/screen.png'),linear-gradient(#3bbcff,#46e6ff);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position:bottom ;
+}
+.now_city{
+	font-size: 0.36rem;
+	color: #fff;
+	text-align: center;
+	line-height: 1.57rem;
+}
+.now_air{
+	width: 2.1rem;
+	height: 1.26rem;
+	background-color: #f1ab62;
+	margin-top: 0.05rem;
+	margin-left: 0.26rem;
+	border-radius: 0.25rem;
+	padding-top: 0.31rem;
+}
+.now_air h1,.now_air h2{
+	font-size: 0.36rem;
+	color: #fff;
+	text-align: center;
+}
+.now_temp{
+	font-size: .96rem;
+	color: #fff;
+	text-align: center;
+	margin-top: 0.77rem;
+	line-height: 0.96rem;
+}
+.now_status{
+	font-size: .51rem;
+	color: #fff;
+	text-align: center;
+	margin-top: 0.90rem;
+	line-height: .51rem;
+}
+.now_wind{
+	font-size: .32rem;
+	color: #fff;
+	text-align: center;
+	margin-top: 0.54rem;
+	line-height: .32rem;
+}
+.now_point{
+	font-size: .32rem;
+	color: #fff;
+	text-align: center;
+	margin-top: 1.48rem;
+}
+#two{
+	width: 100%;
+	height: 3.09rem;
+	background-color: #fff;
+	border-bottom: 0.03rem solid #e4e4e4;
+}
+.two_today{
+	width: 5.39rem;
+	height: 1.62rem;
+	border-right: 0.03rem solid #e4e4e4;
+	margin-top: 0.72rem;
+	float: left;
+}
+.two_today1{
+	float: left;
+	font-size: .32rem;
+	margin-left: 0.58rem;
+	float: left;
+}
+.today_status{
+	margin-top: 0.58rem;
+}
+.two_today2{
+	float: right;
+	margin-right: 0.61rem;
+}
+.two_tomorrow{
+	float: right;
+	border-right: 0 solid #e4e4e4;
+}
+#hours{
+	width: 100%;
+	height: 3.9rem;
+	background-color: #fff;
+	border-top: 0.03rem solid #e4e4e4;
+	border-bottom: 0.03rem solid #e4e4e4;
+	margin-top: 0.3rem ;
+	display: flex;
+	overflow: scroll;
+}
+#hours li,#week li{
+	width: 2rem;
+	height: 100%;
+	/* background-color: red; */
+	padding: 0.94rem 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: space-between;
+	flex-shrink: 0;
+}
+.hours_img{
+	width: 1rem;
+	height: 1rem;
+	padding: 0 .4rem;
+	box-sizing: content-box;
+}
+.hours_time,.hours_temp{
+	font-size: .26rem;	
+}
+#week{
+	width: 100%;
+	height: 11.19rem;
+	background-color: #fff;
+	border-top: 0.03rem solid #e4e4e4;
+	border-bottom: 0.03rem solid #e4e4e4;
+	margin-top: 0.3rem ;
+	display: flex;
+	overflow: scroll;
+}
+.week_time,.max_temp,.min_temp{
+	font-size: .26rem;	
+}
+.week_status,.week_feng,.week_jishu{
+	font-size: .34rem;	
+}
+.max_temp,.min_temp,.week_feng{
+	width: 2rem;
+	text-align: center;
+}
+.week_img{
+	width: 1rem;
+	height: 1rem;
+	padding: 0 .4rem;
+	box-sizing: content-box;
+}
+/* ::是css2、css3的 */
+#hours::-webkit-scrollbar,#week::-webkit-scrollbar,
+.contect::-webkit-scrollbar{
+	display: none;
+}
+#citys{
+	/* 撑开一屏大小 ，VW、VH将当前视口进行平分*/
+	width: 100vw;
+	height: 100vh;
+	background-color: plum;
+	position:fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin:auto; 
+	z-index: 999;
+	background-color: #f6f6f6;
+}
+header{
+	width: 100%;
+	height: 1.29rem;
+	background-color: #fff;
+	padding: 0 .29rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.search{
+	width: 9.03rem;
+	height: 0.87rem;
+	background-color: #e2e2e2;
+	border: 0;
+	border-radius: .2rem;
+	outline: none;
+	padding-left: .32rem;
+}
+.btn{
+	font-size: .44rem;
+	color: #76a9ff;
+}
+.contect{
+	height: 16.95rem;
+	overflow-y: scroll;
+}
+
+.hot_citys{
+	width: 100%;
+}
+.hot_citys span{
+	font-size: .45rem;
+	color: #999999;
+	margin:0 .32rem;
+}
+.hot_citys ul{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-between;
+	align-content: space-between; 
+	/* background-color: #f90; */
+	margin:0 .29rem;
+	padding-right: 2rem;
+	
+
+
+}
+.hot_citys li{
+	width: 2.34rem;
+	height: .84rem;
+	background-color:#fff;
+	border-radius: .2rem; 
+	border: .03rem solid #e0e0e0;
+	font-size: 0.39rem;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	flex-direction: row;
+	margin:0.2rem 0; 
+}

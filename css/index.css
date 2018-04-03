@@ -113,6 +113,7 @@ body{
 	height: 1rem;
 	padding: 0 .4rem;
 	box-sizing: content-box;
+	text-align: center;
 }
 .hours_time,.hours_temp{
 	font-size: .26rem;	
@@ -152,7 +153,7 @@ body{
 	/* 撑开一屏大小 ，VW、VH将当前视口进行平分*/
 	width: 100vw;
 	height: 100vh;
-	background-color: plum;
+	/*background-color: plum;*/
 	position:fixed;
 	top: 0;
 	right: 0;
@@ -160,6 +161,7 @@ body{
 	margin:auto; 
 	z-index: 999;
 	background-color: #f6f6f6;
+	display:none;
 }
 header{
 	width: 100%;
@@ -192,12 +194,12 @@ header{
 .hot_citys{
 	width: 100%;
 }
-.hot_citys span{
+.contect span{
 	font-size: .45rem;
 	color: #999999;
 	margin:0 .32rem;
 }
-.hot_citys ul{
+.allcity{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -206,11 +208,8 @@ header{
 	/* background-color: #f90; */
 	margin:0 .29rem;
 	padding-right: 2rem;
-	
-
-
 }
-.hot_citys li{
+.province,.citys{
 	width: 2.34rem;
 	height: .84rem;
 	background-color:#fff;
@@ -221,5 +220,10 @@ header{
 	justify-content:center;
 	align-items: center;
 	flex-direction: row;
-	margin:0.2rem 0; 
+	float:left;
+	margin:0.2rem .3rem;
+}
+.today img{
+    display: block;
+    margin:auto;
 }

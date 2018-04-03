@@ -114,6 +114,7 @@ body{
 	padding: 0 .4rem;
 	box-sizing: content-box;
 	text-align: center;
+	padding-top: .4rem;
 }
 .hours_time,.hours_temp{
 	font-size: .26rem;	
@@ -143,6 +144,9 @@ body{
 	height: 1rem;
 	padding: 0 .4rem;
 	box-sizing: content-box;
+}
+.week_img img{
+	float:left;
 }
 /* ::是css2、css3的 */
 #hours::-webkit-scrollbar,#week::-webkit-scrollbar,
@@ -225,5 +229,6 @@ header{
 }
 .today img{
     display: block;
-    margin:auto;
+    margin:0.12rem auto 0;
+	float: left;
 }
